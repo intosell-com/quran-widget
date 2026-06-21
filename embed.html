@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>آیه تصادفی قرآن</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body{background:transparent;min-height:auto;margin:0;padding:0;overflow:hidden}
+    .embed-shell{padding:10px}
+    .quran-widget{max-width:100%;margin:0;box-shadow:none}
+    .image-wrap{min-height:158px}
+    .quran-widget-top{margin-bottom:12px}
+    .widget-footer{padding-top:10px}
+  </style>
+</head>
+<body>
+  <div class="embed-shell">
+    <div class="quran-widget" data-quran-box>
+      <div class="quran-widget-top">
+        <span class="badge">قرآن</span>
+        <button type="button" class="refresh" data-next-ayah>آیه دیگر</button>
+      </div>
+      <div class="image-wrap">
+        <div class="loader" data-loader>در حال بارگذاری...</div>
+        <img data-ayah-image alt="تصویر آیه قرآن" loading="lazy" hidden>
+      </div>
+      <div class="widget-footer">
+        <p class="meta" data-meta>—</p>
+        <a class="source-link" href="https://www.intosell.com/fa/v/130601/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1-%D9%87%D8%A7%DB%8C-%D9%82%D8%B1%D8%A7%D9%93%D9%86%DB%8C" target="_blank" rel="noopener noreferrer">منبع و پشتیبان: قرآن</a>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

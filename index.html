@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>نمایش تصادفی آیات قرآن</title>
+  <meta name="description" content="ویجت فوق‌مدرن نمایش تصادفی آیات قرآن به صورت عکس.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero" aria-label="معرفی ابزار">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="hero-copy">
+        <a class="source-pill top-source" href="https://www.intosell.com/fa/v/130601/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1-%D9%87%D8%A7%DB%8C-%D9%82%D8%B1%D8%A7%D9%93%D9%86%DB%8C" target="_blank" rel="noopener noreferrer" aria-label="مشاهده منبع و پشتیبان با برچسب قرآن">
+          <span>منبع و پشتیبان</span>
+          <b>قرآن</b>
+        </a>
+        <p class="eyebrow">Quran Random Image Widget</p>
+        <h1>یک آیه، هر بار تازه‌تر</h1>
+        
+        <div class="actions">
+          <a class="btn primary" href="#demo">مشاهده ویجت</a>
+          <a class="btn ghost" href="#share">دریافت کد اشتراک</a>
+        </div>
+      </div>
+
+      <aside class="hero-visual" aria-label="نماد قرآنی">
+        <div class="geo-ring"></div>
+        <div class="glass-tile">
+          <span class="tile-mark">۞</span>
+          <p>فَاقْرَؤُوا مَا تَيَسَّرَ مِنَ الْقُرْآنِ</p>
+          <small>نمایش تصویری آیات قرآن</small>
+        </div>
+      </aside>
+    </section>
+
+    <section id="demo" class="section demo-section">
+      <div class="section-title">
+        <p class="eyebrow">پیش‌نمایش زنده</p>
+        <h2>آیه تصادفی</h2>
+      </div>
+
+      <div class="quran-widget" data-quran-box>
+        <div class="quran-widget-top">
+          <span class="badge">تصویر قرآنی</span>
+          <button type="button" class="refresh" data-next-ayah>نمایش آیه دیگر</button>
+        </div>
+        <div class="image-wrap">
+          <div class="loader" data-loader>در حال خواندن quran.txt...</div>
+          <img data-ayah-image alt="تصویر آیه قرآن" loading="lazy" hidden>
+        </div>
+        <div class="widget-footer">
+          <p class="meta" data-meta>—</p>
+          <a class="source-link" href="https://www.intosell.com/fa/v/130601/%D9%BE%D9%88%D8%B3%D8%AA%D8%B1-%D9%87%D8%A7%DB%8C-%D9%82%D8%B1%D8%A7%D9%93%D9%86%DB%8C" target="_blank" rel="noopener noreferrer">منبع و پشتیبان: قرآن</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="share" class="section share-section">
+      <div class="section-title">
+        <p class="eyebrow">اشتراک‌گذاری</p>
+        <h2>کد نمایش در سایت یا وبلاگ دیگر</h2>
+      </div>
+      <p class="help">
+        پس از انتشار پروژه روی GitHub Pages، این کد را در سایت مقصد قرار دهید.
+      </p>
+
+      <div class="code-card">
+        <button type="button" class="copy" data-copy="#shareCode">کپی</button>
+        <pre><code id="shareCode"></code></pre>
+      </div>
+
+      <details>
+        <summary>کد جایگزین با iframe</summary>
+        <div class="code-card">
+          <button type="button" class="copy" data-copy="#iframeCode">کپی</button>
+          <pre><code id="iframeCode"></code></pre>
+        </div>
+      </details>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
